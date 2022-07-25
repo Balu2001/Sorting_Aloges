@@ -1,0 +1,13 @@
+#insertion sorting. ---time comlex-O(n**2)
+
+#it compair sorted array and non sorted array
+
+l=[1000,33,5,6,8]
+for i in range(1,len(l)):    # assume first ,first element is sorted array so we itarate after 0 index
+    temp=l[i]        
+    j=i-1
+    while (j>=0 and l[j]>temp):
+        l[j+1]=l[j]
+        j=j-1
+    l[j+1]=temp
+print(l)
