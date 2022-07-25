@@ -1,0 +1,13 @@
+#seletion sorting. --- Best case and vast case also ---time comlex-O(n**2)
+
+#finding min element then swap
+
+l=[10,3,5,6,8]
+for i in range(0,len(l)):
+    minu=i        
+    for j in range(i+1,len(l)):
+        if l[j]<l[minu]:
+            minu=j
+    if minu!=i:
+        l[i],l[minu]=l[minu],l[i]
+print(l)
